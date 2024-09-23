@@ -3,6 +3,7 @@ import {config} from 'dotenv'
 
 config()
 Settings.llm = new OpenAI({ model: "gpt-3.5-turbo", temperature: 0 });
+
 class LlamaIndexService {
 
     documents : Document[] = []
